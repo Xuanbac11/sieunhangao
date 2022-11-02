@@ -1,0 +1,31 @@
+   
+
+
+  App Shop thời trang GenZ
+
+ Chủ sốp (quản lí)	
+
+ 1. sản phẩm
+ 2. nhân viên 
+ 3. khách hàng 
+ 4. đơn hàng
+ 5. thu chi
+
+
+ Khách hàng (mua hàng)
+ 
+ 1. sản phẩm
+ 2. đơn đặt hàng
+ 3. feed back
+
+ Nhân viên 
+ 
+ 1. chấm công 
+ 2. cskh
+ 3. lương
+ 4. đơn hàng
+ 
+ 
+ 
+ 
+ 
