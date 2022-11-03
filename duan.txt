@@ -18,12 +18,58 @@
  2. đơn đặt hàng
  3. feed back
 
- Nhân viên 
+
+    
+ sql server 
+ fire base 
+ gửi đơn hàng : đang xử lí
  
- 1. chấm công 
- 2. cskh
- 3. lương
- 4. đơn hàng
+ Một cửa hàng cần xây dựng một ứng dụng quản lí và bán hàng on lai
+
+ Shop thời trang GenZ chuyên cung cấp các sản phẩm thời trang cho giới trẻ như quần áo, 
+ giày dép, phụ kiện xinh.Tuy nhiên việc bán hàng off tại cửa hàng còn mất nhiều chi phí
+ và không có khả năng mở rộng thị trường .
+ Để mở rộng kinh doanh, chi phí tiết kiệm 
+ và công sức đầu tư bỏ ra không nhiều. Thì bán hàng onl là một hình thức khá phổ biến
+ và mở ra nhiều điều sáng tạo thú vị trong kinh doanh cho bất kì đối tượng nào.
+
+ Vì vậy shop mong muốn xây dựng một ứng dụng chạy trên thiết bị di động cá nhân
+ để giải quyết vấn đề nêu trên với yêu cầu như sau:
+  Đối với chủ sốp:
+ - Quản lí sản phẩm
+ - Quản lí khách hàng
+ - Quản lí đơn hàng
+ - Quản lí doanh thu
+  Đối với khách hàng:
+ - Danh sách sản phẩm
+ - Theo dõi đơn hàng
+ - Feedback 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
  
