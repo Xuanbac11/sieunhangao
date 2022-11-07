@@ -1,1 +1,76 @@
 dsdssd
+Create database QLTT
+
+create table sanPham(
+  id_sanPham int identity(1,1) primary key,
+  ten_sanPham nvarchar(50),
+  giaTien int
+)
+
+
+create table khachHang(
+  id_khachHang int identity(1,1) primary key,
+  ten_khachHang nvarchar(50),
+  sdt_khachHang varchar(10),
+  diaChi nvarchar(100),
+  userName varchar(50),
+  userPass varchar(20)
+)
+
+create table donHang(
+  id_donHang int identity(1,1) primary key,
+  id_khachHang int,
+  trangThai nvarchar(30),
+  foreign key (id_khachHang) references khachHang(id_khachHang)
+)
+
+create table chiTietDonHang(
+  id_donHang int,
+  id_khachHang int,
+  id_sanPham int,
+  soLuong int,
+  foreign key (id_khachHang) references khachHang(id_khachHang),
+  foreign key (id_donHang) references donHang(id_donHang),
+  foreign key (id_sanPham) references sanPham(id_sanPham)
+)
+
+
+insert into sanPham values
+(N'Áo đôn chề',1000),
+(N'Quần đôn chề',2000),
+(N'Mũ đôn chề',3000),
+(N'Giày đôn chề',4000),
+(N'Kính đôn chề',5000)
+
+select * from sanPham
+
+insert into khachHang values
+(N'Nguyễn Văn A','0123456789','Hà Nội','avn123','123456'),
+(N'Nguyễn Văn B','0123456789','Thái Bình','bvn123','123456'),
+(N'Nguyễn Văn C','0123456789','Hưng Yên','cvn123','123456'),
+(N'Nguyễn Văn D','0123456789','Hòa Bình','dvn123','123456'),
+(N'Nguyễn Văn E','0123456789','Thanh Hóa','evn123','123456')
+
+select * from khachHang
+
+insert into donHang values
+(1,N'Đang chuẩn bị hàng'),
+(2,N'Đang chuẩn bị hàng'),
+(4,N'Đang chuẩn bị hàng'),
+(5,N'Đang chuẩn bị hàng'),
+(3,N'Đang chuẩn bị hàng')
+
+select * from chiTietDonHang
+
+insert into chiTietDonHang values
+(1,1,1,5),
+(3,2,4,6),
+(5,4,3,7),
+(2,3,5,8),
+(4,5,2,9)
+
+
+--Tổng tiền
+select ten_khachHang as 'user', ten_sanPham as 'san pham', (giaTien * soLuong) as 'Tong Tien'
+from chiTietDonHang ctdh,khachHang kh,sanPham sp
+where ctdh.id_khachHang = kh.id_khachHang and ctdh.id_sanPham = sp.id_sanPham
